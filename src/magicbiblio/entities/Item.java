@@ -25,10 +25,21 @@
  */
 package magicbiblio.entities;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author AlexandrosVM
  */
-public interface Item {
+public abstract class Item {
     
+    protected String id;
+    protected String name;
+    protected ArrayList<Author> author; 
+    protected ArrayList<Cite> cite;
+    
+    public abstract String getId();
+    public abstract String getName();
+    public abstract ArrayList<Author> getAuthor();
+    public abstract ArrayList<Cite> getCite();
 }

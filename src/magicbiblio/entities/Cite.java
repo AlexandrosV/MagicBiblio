@@ -29,8 +29,35 @@ package magicbiblio.entities;
  *
  * @author AlexandrosVM
  */
-public interface Style {
+public class Cite {
     
-    public void getName();
+    private String itemId;
+    private String content;
+    private String page;
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
+    }
+
+    public String getItemId() {
+        return itemId;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public String getPage() {
+        return page;
+    }
     
+  
 }

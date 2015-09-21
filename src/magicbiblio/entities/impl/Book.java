@@ -23,14 +23,45 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-package magicbiblio.entities;
+package magicbiblio.entities.impl;
+
+import java.util.ArrayList;
+import magicbiblio.entities.Author;
+import magicbiblio.entities.Cite;
+import magicbiblio.entities.Item;
 
 /**
  *
  * @author AlexandrosVM
  */
-public interface Style {
+public class Book extends Item {
     
-    public void getName();
+    private int yearOfPublication;
+    private String title;
+    private int edition;
+    private String placeOfPublication;
+    private String publisher;
+    private int volume;
+    private int serie;
+    
+    @Override
+    public String getId() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Author> getAuthor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Cite> getCite() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
